@@ -28,17 +28,16 @@ main {
         justify-content: center;
         align-items: center;
         color: white;
+        text-shadow: 3px 3px 4px black, 0 0 2em black, 0 0 1em black;
 
         h1 {
             font-size: 2.5rem;
-            text-shadow: 3px 3px 4px black, 0 0 2em black, 0 0 1em black;
-
-            p {
+            h5 {
                 padding: 5%;
-                font-size: 1.2rem;
+                font-size: 1.5rem;
                 display: flex;
                 align-items: center;
-                text-shadow: 3px 3px 4px black, 0 0 2em black, 0 0 1em black;
+                font-weight: bold;   
             }
         }
     }
@@ -117,14 +116,13 @@ main {
         justify-content: center;
         align-items: center;
         color: white;
+        text-shadow: 3px 3px 4px black, 0 0 2em black, 0 0 1em black;
 
         h1 {
             font-size: 3rem;
-            text-shadow: 3px 3px 4px black, 0 0 2em black, 0 0 1em black;
-
-            p {
+            h5 {
                 font-size: 1.5rem;
-                text-shadow: 3px 3px 4px black, 0 0 2em black, 0 0 1em black;
+                font-weight: bold;
             }
         }
     }

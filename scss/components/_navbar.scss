@@ -1,5 +1,6 @@
 header {
     display: flex;
+    z-index: 2;
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(95deg, #3a5a40 30%, #314034 100%);
@@ -43,6 +44,7 @@ header {
 
     header {
         position: fixed;
+        z-index: 2;
         width: 100%;
         background: linear-gradient(95deg, #3a5a40 30%, #314034 100%);
         padding: 5px 50px;
@@ -59,6 +61,7 @@ header {
         ul {
             display: block;
             position: fixed;
+            z-index: 2;
             top: 70px;
             left: -100%;
             background: linear-gradient(95deg, #3a5a40 20%, #314034 100%);
@@ -92,6 +95,7 @@ header {
     .menu-icon {
         display: block;
         position: fixed;
+        z-index: 2;
         top: 10px;
         right: 10px;
 

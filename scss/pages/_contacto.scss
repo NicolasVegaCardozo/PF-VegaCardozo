@@ -12,14 +12,21 @@
     justify-content: center;
     align-items: center;
     color: white;
+    text-shadow: 3px 3px 4px black, 0 0 2em black, 0 0 1em black;
+    
     h1 {
         font-size: 3rem;
-        text-shadow: 3px 3px 4px black, 0 0 2em black, 0 0 1em black;
-        p {
-            font-size: 1.5rem;
-            text-shadow: 3px 3px 4px black, 0 0 2em black, 0 0 1em black;
+        h5 {
+            font-size: 1.5rem; 
         }
     }
+}
+
+.pedido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .main3 {

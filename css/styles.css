@@ -13,9 +13,37 @@ a {
   text-decoration: none;
 }
 
-/*---Body---*/
+h2 {
+  text-align: center;
+  padding: 1%;
+}
+
+/*---Main---*/
+main {
+  background-color: white;
+  color: black;
+}
+
+/*---Footer---*/
+.bg-footer {
+  background-color: #ffc8dd;
+}
+
+.c-rojo {
+  color: #e63946;
+}
+
+.enlace {
+  color: blueviolet;
+}
+
+.copyright {
+  font-size: 80%;
+}
+
 .wtp__sticky {
   position: fixed;
+  z-index: 3;
   bottom: 25px;
   right: 20px;
   border-radius: 40px;
@@ -43,9 +71,9 @@ a {
   color: #ffbb00;
 }
 
-/*---Header---*/
 header {
   display: flex;
+  z-index: 2;
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(95deg, #3a5a40 30%, #314034 100%);
@@ -83,6 +111,7 @@ header ul li a {
   }
   header {
     position: fixed;
+    z-index: 2;
     width: 100%;
     background: linear-gradient(95deg, #3a5a40 30%, #314034 100%);
     padding: 5px 50px;
@@ -93,9 +122,10 @@ header ul li a {
     height: 5rem;
     margin-left: 10px;
   }
-  header nav ul {
+  nav ul {
     display: block;
     position: fixed;
+    z-index: 2;
     top: 70px;
     left: -100%;
     background: linear-gradient(95deg, #3a5a40 20%, #314034 100%);
@@ -103,13 +133,13 @@ header ul li a {
     height: 80vh;
     right: 0;
   }
-  header nav ul li {
+  nav ul li {
     padding: 2rem;
     display: flex;
     justify-content: center;
     margin: 0;
   }
-  header nav ul li a {
+  nav ul li a {
     color: white;
   }
   #check {
@@ -119,134 +149,24 @@ header ul li a {
     left: 0;
     transition: all 0.25s;
   }
+  .menu-icon {
+    display: block;
+    position: fixed;
+    z-index: 2;
+    top: 10px;
+    right: 10px;
+  }
   .menu-icon img {
     width: 6rem;
     height: 4rem;
   }
-  .menu-icon {
-    display: block;
-    position: fixed;
-    top: 10px;
-    right: 10px;
-  }
 }
-/*---Main---*/
-h2 {
-  text-align: center;
-  padding: 1%;
-}
-
-main {
-  background-color: white;
-  color: black;
-}
-
-/*---Footer---*/
-.bg-footer {
-  background-color: #ffc8dd;
-}
-
-.c-rojo {
-  color: #e63946;
-}
-
-.enlace {
-  color: blueviolet;
-}
-
-.copyright {
-  font-size: 80%;
-}
-
-/*---Main-contacto---*/
-.portada3 {
-  background-image: url(../img/pastel\ de\ papas.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-
-.portada3 h1 {
-  font-size: 3rem;
-  text-shadow: 3px 3px 4px black, 0 0 2em black, 0 0 1em black;
-}
-
-.portada3 p {
-  font-size: 1.5rem;
-  text-shadow: 3px 3px 4px black, 0 0 2em black, 0 0 1em black;
-}
-
-.section3 {
-  display: flex;
-  justify-content: center;
-}
-
-.section3 div {
-  width: 30vw;
-}
-
-.main3 {
-  padding: 0%;
-}
-
-.div0 ul li {
-  display: block;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  box-sizing: content-box;
-}
-
-.map {
-  display: flex;
-  justify-content: center;
-}
-
-/*---Main-envios---*/
-.portada4 {
-  background-image: url(../img/vianda\ envios.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-
-.portada4 h1 {
-  font-size: 3rem;
-  text-shadow: 3px 3px 4px black, 0 0 2em black, 0 0 1em black;
-}
-
-.portada4 p {
-  font-size: 1.5rem;
-  text-shadow: 3px 3px 4px black, 0 0 2em black, 0 0 1em black;
-}
-
-.main4 {
-  padding: 0%;
-}
-
-.textoenvios {
-  padding: 2%;
-  text-align: center;
-}
-
 /*---Main-index---*/
 main h2 {
   text-align: center;
   font-weight: bolder;
 }
-
-main ul li {
+main h2 ul li {
   display: inline-block;
   padding: 2em;
 }
@@ -263,17 +183,17 @@ main ul li {
     justify-content: center;
     align-items: center;
     color: white;
+    text-shadow: 3px 3px 4px black, 0 0 2em black, 0 0 1em black;
   }
   .portada h1 {
     font-size: 2.5rem;
-    text-shadow: 3px 3px 4px black, 0 0 2em black, 0 0 1em black;
   }
-  .portada p {
+  .portada h1 h5 {
     padding: 5%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
-    text-shadow: 3px 3px 4px black, 0 0 2em black, 0 0 1em black;
+    font-weight: bold;
   }
   .promos {
     display: flex;
@@ -339,14 +259,14 @@ main ul li {
     justify-content: center;
     align-items: center;
     color: white;
+    text-shadow: 3px 3px 4px black, 0 0 2em black, 0 0 1em black;
   }
   .portada h1 {
     font-size: 3rem;
-    text-shadow: 3px 3px 4px black, 0 0 2em black, 0 0 1em black;
   }
-  .portada p {
+  .portada h1 h5 {
     font-size: 1.5rem;
-    text-shadow: 3px 3px 4px black, 0 0 2em black, 0 0 1em black;
+    font-weight: bold;
   }
   .promos {
     display: flex;
@@ -399,7 +319,7 @@ main ul li {
     color: black;
     font-size: 1rem;
   }
-  .span input[type=button] {
+  .span input:not([type=submit]) input[type=button] {
     border-radius: 5px;
     background-color: #3a5a40;
     color: white;
@@ -408,7 +328,7 @@ main ul li {
     padding: 0.5rem 2rem;
     cursor: pointer;
   }
-  .span input[type=button]:hover {
+  .span input:not([type=submit]) input[type=button] input[type=button]:hover {
     color: orangered;
   }
 }
@@ -435,17 +355,16 @@ main ul li {
     justify-content: center;
     align-items: center;
     color: white;
+    text-shadow: 3px 3px 4px black, 0 0 2em black, 0 0 1em black;
   }
   .portada2 h1 {
     font-size: 2.5rem;
-    text-shadow: 3px 3px 4px black, 0 0 2em black, 0 0 1em black;
   }
-  .portada2 p {
+  .portada2 h1 h5 {
     padding: 5%;
     font-size: 1.2rem;
     display: flex;
     align-items: center;
-    text-shadow: 3px 3px 4px black, 0 0 2em black, 0 0 1em black;
   }
 }
 @media (min-width: 768px) {
@@ -460,14 +379,13 @@ main ul li {
     justify-content: center;
     align-items: center;
     color: white;
+    text-shadow: 3px 3px 4px black, 0 0 2em black, 0 0 1em black;
   }
   .portada2 h1 {
     font-size: 3rem;
-    text-shadow: 3px 3px 4px black, 0 0 2em black, 0 0 1em black;
   }
-  .portada2 p {
+  .portada2 h1 h5 {
     font-size: 1.5rem;
-    text-shadow: 3px 3px 4px black, 0 0 2em black, 0 0 1em black;
   }
 }
 .main2 {
@@ -523,6 +441,75 @@ main ul li {
     grid-template-columns: auto;
   }
 }
+/*---Main-contacto---*/
+.portada3 {
+  background-image: url(../img/pastel\ de\ papas.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 3px 3px 4px black, 0 0 2em black, 0 0 1em black;
+}
+.portada3 h1 {
+  font-size: 3rem;
+}
+.portada3 h1 h5 {
+  font-size: 1.5rem;
+}
+
+.pedido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main3 {
+  padding: 0%;
+}
+
+.div0 ul li {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-sizing: content-box;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+}
+
+/*---Main-envios---*/
+.portada4 {
+  background-image: url(../img/vianda\ envios.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 3px 3px 4px black, 0 0 2em black, 0 0 1em black;
+}
+.portada4 h1 {
+  font-size: 3rem;
+}
+.portada4 h1 h5 {
+  font-size: 1.5rem;
+}
+
+.main4 {
+  padding: 0%;
+}
+
 /*---Main-somosgerminar---*/
 .portada5 {
   background-image: url(../img/somosgerminar.jpg);
@@ -536,21 +523,22 @@ main ul li {
   align-items: end;
   padding: 15%;
   color: white;
+  text-shadow: 3px 3px 4px black, 0 0 2em black, 0 0 1em black;
 }
-
 .portada5 h1 {
   font-size: 3rem;
-  text-shadow: 3px 3px 4px black, 0 0 2em black, 0 0 1em black;
 }
-
-.portada5 p {
+.portada5 h1 h5 {
   font-size: 1.5rem;
-  text-shadow: 3px 3px 4px black, 0 0 2em black, 0 0 1em black;
 }
 
 .c-yellow {
   background-color: #E6A522;
 }
 
+.carrusel {
+  margin-bottom: auto;
+  z-index: 1;
+}
 
 /*# sourceMappingURL=styles.css.map */
