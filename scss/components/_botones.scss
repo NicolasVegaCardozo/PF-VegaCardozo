@@ -18,13 +18,13 @@
 
 .btn-primary,
 .btn-dark {
-    background-color: #3a5a40;
-    border-color: #3a5a40;
+    background-color: $colorUno;
+    border-color: $colorUno;
 }
 
 .btn-primary:hover,
 .btn-dark:hover {
-    background-color: #3a5a40;
-    border-color: #3a5a40;
-    color: #ffbb00;
+    background-color: $colorUno;
+    border-color: $colorUno;
+    color: $colorCuatro;
 }

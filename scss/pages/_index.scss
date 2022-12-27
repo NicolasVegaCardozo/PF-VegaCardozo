@@ -135,10 +135,7 @@ img:hover {
     }
 
     .promos {
-        display: flex;
-        justify-content: space-around;
-        padding: 0%;
-
+        @include flexbox(space-araund);
         img {
             margin-top: 1rem;
             width: 5rem;
@@ -185,7 +182,7 @@ img:hover {
 
         input:not([type="submit"]) {
             padding: 0.5rem;
-            border: 1.5px solid #3a5a40;
+            border: 1.5px solid $colorUno;
             border-radius: 5px;
             margin-bottom: 0.5rem;
             color: black;
@@ -193,7 +190,7 @@ img:hover {
 
             input[type="button"] {
                 border-radius: 5px;
-                background-color: #3a5a40;
+                background-color: $colorUno;
                 color: white;
                 font-weight: bolder;
                 font-size: 1rem;

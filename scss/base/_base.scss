@@ -22,8 +22,8 @@ h2 {
 /*---Main---*/
 
 main {
-    background-color: white;
-    color: black;
+    background-color: $colorOcho;
+    color: $colorNueve;
 }
 
 .img-fluid:hover{
@@ -34,15 +34,15 @@ main {
 /*---Footer---*/
 
 .bg-footer {
-    background-color: #ffc8dd;
+    background-color: $colorCinco;
 }
 
 .c-rojo {
-    color: #e63946;
+    color: $colorSiete;
 }
 
 .enlace {
-    color: blueviolet;
+    color: $colorDiez;
 }
 
 .copyright {

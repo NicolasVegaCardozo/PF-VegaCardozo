@@ -1,0 +1,11 @@
+@mixin flexbox($justify) {
+    display: flex;
+    padding: 0%;
+    justify-content: $justify;
+
+}
+
+@mixin mapa($justify) {
+    display: flex;
+    justify-content: $justify;
+}

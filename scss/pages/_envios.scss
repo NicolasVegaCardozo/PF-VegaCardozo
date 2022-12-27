@@ -11,8 +11,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
-    text-shadow: 3px 3px 4px black, 0 0 2em black, 0 0 1em black;
+    color: $colorOcho;
+    text-shadow: 3px 3px 4px $colorNueve, 0 0 2em $colorNueve, 0 0 1em $colorNueve;
     h1 {
         font-size: 3rem;
         h5 {
